@@ -1,7 +1,10 @@
 const logger = (req,res,next) =>
 {
-console.log(`[$new Date().toISOString()] ${req.method} ${req.originalurl}`);
-
+    const fecha = new Date().toISOString();
+    const method = req.method;
+    const url = req.originalUrl;
+    console.log(`${fecha} - ${method} - ${url}`);
+    next();
 
 }
 

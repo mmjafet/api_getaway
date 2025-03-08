@@ -7,6 +7,3 @@ const services =[
     {
         name:"user",
         url :"http://localhost:3003",
-        path:"api/Us"
-    }
-]
